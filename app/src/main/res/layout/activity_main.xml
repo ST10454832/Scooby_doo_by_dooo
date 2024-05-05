@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#C859DE"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Hello World!"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.544"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.674" />
+
+    <ImageView
+        android:id="@+id/welcome_image_view"
+        android:layout_width="423dp"
+        android:layout_height="508dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/scoobyboo_welcome_page"
+        tools:layout_editor_absoluteY="91dp" />
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="434dp"
+        android:layout_height="132dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/logo" />
+
+    <ImageButton
+        android:id="@+id/start_button"
+        android:layout_width="241dp"
+        android:layout_height="221dp"
+        android:background="#00FFFFFF"
+        android:scaleType="fitCenter"
+        app:srcCompat="@drawable/iconssearch"
+        tools:layout_editor_absoluteX="197dp"
+        tools:layout_editor_absoluteY="526dp" />
+
+    <TextView
+        android:id="@+id/welcome_text_view"
+        android:layout_width="194dp"
+        android:layout_height="194dp"
+        android:layout_marginStart="31dp"
+        android:fontFamily="@font/bangers"
+        android:text="Welcome to Doo-by-Doo Your Virtual pet!!"
+        android:textAlignment="center"
+        android:textAllCaps="false"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/welcome_image_view" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
